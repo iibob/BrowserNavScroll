@@ -1,7 +1,15 @@
-# browser_page_map
-Chrome browser page map plugin.
+# BrowserNavScroll
 
-Code comes from here: https://larsjung.de/pagemap/
+使用手绘板点击浏览器的滚动条滑动网页真捉急，此插件可方便用笔滑动网页。
+
+原始代码来源于这里：https://larsjung.de/pagemap/
+
+删除了原有各类标签渲染成色块的功能，单纯当一个加宽的滚动条使用。
+
+目前有以下问题，研究后尝试解决，失败：
+- 不兼容某些使用自定义滚动条的网页
+- 加宽的滚动条置顶显示在网页之上，会影响滚动条下方鼠标对网页的操作（滚动条区域的鼠标操作，只会滚动网页）
+- 当页面无滚动条时（浏览器窗口高度大于网页高度），插件仍然会显示一个矩形色块
 
 <br>
 

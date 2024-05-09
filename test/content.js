@@ -402,3 +402,4 @@ scrollbar.addEventListener('mousedown', function (event) {
     document.removeEventListener('mousemove', dragScrollbar);
   });
 });
+

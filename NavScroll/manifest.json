@@ -5,15 +5,22 @@
     "description": "在网页中添加一个导航器",
     "permissions": ["activeTab"],
     "content_scripts": [{
-        "matches": ["<all_urls>"],
-        "js": ["pagemap.min.js", "contentScript.js"],
-        "run_at": "document_idle"
-    }],
+            "matches": ["<all_urls>"],
+            "js": [
+                "pagemap.min.js",
+                "contentScript.js"
+            ],
+            "run_at": "document_idle",
+            "exclude_matches": [
+                "*://jshopx.jd.com/*",
+                "*://wangpu.taobao.com/*"
+            ]
+        }],
     "action": {
         "default_icon": {
-          "16": "icon.png",
-          "48": "icon.png",
-          "128": "icon.png"
+            "16": "icon.png",
+            "48": "icon.png",
+            "128": "icon.png"
         }
     },
     "icons": {
